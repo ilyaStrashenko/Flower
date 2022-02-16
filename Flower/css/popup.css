@@ -1,0 +1,84 @@
+.popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all 0.8s ease 0s;
+   z-index: 30;
+}
+.popup:target{
+   opacity: 1;
+   visibility: visible;
+}
+.popup:target .popup__content{
+   transform: translate(0px, 0px);
+   opacity: 1;
+}
+.popup__body {
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 100px 0px 0px 0px;
+}
+.popup__content {
+   background: #fff;
+   border-radius: 20px;
+   max-width: 800px;
+   position: relative;
+   transition: all 0.8s ease 0s ;
+   opacity: 0;
+   transform: translate(0px,-100%);
+   min-width: 300px;
+   
+}
+.popup__close {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   font-size: 20px;
+   color: #000;
+   text-decoration: none;
+}
+
+.mobile__menu {
+}
+.mobile__menu-list {
+   padding: 30px;
+   text-align: center;
+}
+.mobile-menu-item {
+   padding: 10px;
+}
+.mobile__item-link {
+   padding: 10px;
+   color: #000;
+   font-size: 18px;
+}
+.header-menu-item {
+   padding: 10px;
+   color: #000;
+   font-size: 18px;
+}
+.phone {
+}
+.phone__item {
+}
+.contact__item-social1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 10px;
+}
+.social {
+}
+.social__item {
+}
+.social__link {
+}
